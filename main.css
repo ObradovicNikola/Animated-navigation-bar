@@ -38,8 +38,6 @@ nav {
 .brand {
     font-size: 3rem;
     font-weight: lighter;
-    transform: translateX(-100rem);
-    animation: slideIn .5s forwards;
 }
 
 .brand span {
@@ -52,8 +50,6 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    transform: translateX(100rem);
-    animation: slideIn .5s forwards;
 }
 
 nav ul li:nth-child(1){
@@ -61,7 +57,7 @@ nav ul li:nth-child(1){
 }
 
 nav ul li:nth-child(2){
-    animation-delay: .3s;
+    animation-delay: .5s;
 }
 
 nav ul li:nth-child(3){
@@ -69,7 +65,7 @@ nav ul li:nth-child(3){
 }
 
 nav ul li:nth-child(4){
-    animation-delay: .3s;
+    animation-delay: .5s;
 }
 
 nav ul li a {
@@ -113,14 +109,6 @@ nav ul li a::after {
 nav ul li a:hover::before,
 nav ul li a:hover::after {
     transform: scaleX(1);
-}
-
-@keyframes slideIn {
-    from {}
-
-    to {
-        transform: translateX(0);
-    }
 }
 
 h2  {
